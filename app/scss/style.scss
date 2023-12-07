@@ -1,0 +1,85 @@
+
+@import "vars";
+@import "fonts";
+@import "reset";
+@import "global";
+
+.header__container{
+   display: flex;
+   width: 100%;
+   justify-content: space-between;
+}
+
+.header__logo{
+   background: $gradient;
+   font-size: 20px;
+   font-weight: 500;
+   -webkit-background-clip: text;
+   color: transparent; 
+   background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+
+.nav__list{
+   display: flex;
+   width: 40vw;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+
+.nav__item{
+   position: relative;
+}
+
+.nav__link{
+   display: flex;
+
+}
+
+.nav__link:hover{
+   color: $green;
+}
+
+.nav__link::before,
+.nav__link::after{
+   color: $green;
+   position: absolute;
+   display: block;
+   opacity: 0;
+   transition: opacity 0.3s ease;
+}
+
+.nav__link::before{
+	content: "\02C2";
+	left: -16px;
+}
+
+.nav__link::after{
+	content: "\02C3";
+	right: -16px;
+}
+
+.nav__link:hover::before,
+.nav__link:hover::after {
+  opacity: 1;
+}
+
+.language-switcher__button{
+   background: none;
+   border: none;
+   color: $white;
+   text-transform: uppercase;
+   font-weight: 500;
+}
+
+.language-switcher__button:hover{
+   color: $purple;
+}
+
+.header__language-line{
+   display: inline-block;
+   width: 2px;
+   height: 14px;
+   background: $white;
+   margin: 0 5px;
+}
