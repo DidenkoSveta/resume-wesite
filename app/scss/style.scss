@@ -36,6 +36,7 @@
 
 .nav__link{
    display: flex;
+   color: $green;
 
 }
 
@@ -102,15 +103,17 @@
 
 .header__burger {
    background-image: url("../images/icons/menu-burger.svg");
+   background-color: #00000000;
 }
 
 .header__close {
    position: absolute;
-   top: 10vh;
+   top: 4vh;
    background-image: url("../images/icons/close-burger.svg");
 }
 
 .hero{
+   position: relative;
 	width: 100vw;
 	padding: 80px 14vw;
    &__inner{
@@ -246,10 +249,45 @@
    margin: 0 10px;
 }
 
-
-
-
-
+.footer{
+   display: flex;
+   flex-direction: column;
+   position: relative;
+   gap: 50px;
+   margin-bottom: 80px;
+   &__socials{
+      display: flex;
+      justify-content: space-between;
+      width: 400px;
+      margin-top: 160px;
+   }
+   &__social-link{
+      display: inline-block;
+      padding: 15px;
+      border-radius: 100px ;
+      background-color: $gray;
+   }
+   &__social-link:hover{
+      transform: scale(1.1);
+      transition: transform 0.3s linear;
+      cursor: pointer;
+   }
+   &__email{
+      font-size: 40px;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 500;
+      letter-spacing: 1.2px;
+   }
+   &__nav-list{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      width: 40vw;
+   }
+   &__navigation{
+      margin-top: 20px;
+   }
+}
 
 
 
