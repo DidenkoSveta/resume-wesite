@@ -13,7 +13,8 @@
 
 @media (max-width: 1440px){
    header,
-   footer{
+   footer,
+   .skills{
       width: 100vw;
       padding: 30px 6vw;
    }
@@ -21,7 +22,8 @@
 
 @media (max-width: 1040px){
    header,
-   footer{
+   footer,
+   .skills{
       width: 100vw;
       padding: 20px 4vw;
    }
@@ -294,8 +296,16 @@
 
 @media (max-width: 1040px){
    .footer__socials{
-      width: 100%;
+      justify-content: space-evenly;
+      width: 50%;
       margin-top: 160px;
+   }
+}
+
+@media (max-width: 768px){
+   .footer__socials{
+      justify-content: space-between;
+      width: 70%;
    }
 }
 
@@ -308,8 +318,42 @@
 
 @media (max-width: 390px){
    .footer__social-icon{
-      height: 30px;;
+      height: 30px;
    }
 }
 
+@media (max-width: 1440px){
+   .skills__item{
+      width: 28vw;
+      padding: 19px 20px;  
+   }
+}
 
+@media (max-width: 1040px){
+   .skills__item{
+      width: 28vw;
+      padding: 19px 20px;  
+   }
+}
+
+@media (max-width: 768px){
+   .skills__item{
+      width: 44vw;
+      padding: 19px 20px;  
+   }
+}
+
+@media (max-width: 390px){
+   .skills__item{
+      width: 90vw;
+      text-align: center;
+      padding: 10px 20px;  
+      border: 1px solid var(--light, rgba(235, 235, 235, 0.40));
+   }
+}
+
+@media (max-width: 390px){
+   .skills__list{
+      row-gap: 8px;
+   }
+}

@@ -34,18 +34,28 @@
    position: relative;
 }
 
+.footer__nav-item{
+   position: relative;
+}
+
 .nav__link{
    display: flex;
    color: $green;
 
 }
 
-.nav__link:hover{
+.footer__nav-link{
+   display: flex;
+}
+
+.footer__nav-link:hover{
    color: $green;
 }
 
 .nav__link::before,
-.nav__link::after{
+.nav__link::after,
+.footer__nav-link::before,
+.footer__nav-link::after{
    color: $green;
    position: absolute;
    display: block;
@@ -53,18 +63,25 @@
    transition: opacity 0.3s ease;
 }
 
-.nav__link::before{
+.nav__link::before,
+.footer__nav-link::before{
 	content: "\02C2";
 	left: -16px;
 }
 
-.nav__link::after{
+.nav__link::after,
+.footer__nav-link::after{
 	content: "\02C3";
 	right: -16px;
 }
 
 .nav__link:hover::before,
-.nav__link:hover::after {
+.nav__link:hover::after{
+  opacity: 1;
+}
+
+.footer__nav-link:hover::before,
+.footer__nav-link:hover::after {
   opacity: 1;
 }
 
@@ -282,15 +299,39 @@
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
-      width: 40vw;
+      width: 30vw;
    }
    &__navigation{
       margin-top: 20px;
    }
 }
 
-
-
+.skills{
+   flex-direction: column;
+   &__categories{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      width: 100%;
+   }
+   &__list{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      row-gap: 20px;
+   }
+   &__item{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 22vw;
+      padding: 19px 30px;  
+      border-radius: 10px;
+      border: 1px solid var(--light, rgba(235, 235, 235, 0.60));
+      text-align: center;
+   }
+}
 
 
 
