@@ -5,6 +5,7 @@
 @import "global";
 
 .header__container{
+   position: relative;
    display: flex;
    width: 100%;
    justify-content: space-between;
@@ -88,28 +89,25 @@
 .header__burger,
 .header__close {
    display: none;
-   position: absolute;
-   width: 25px;
-   height: 21px;
+   width: 50px;
+   height: 50px;
    background-size: contain;
    background-repeat: no-repeat;
    border: none;
    z-index: 11;
    cursor: pointer;
-   background-color: $white;
-   right: 48px;
-
-
-   &.header__burger {
-      background-image: url("../images/icons/menu-burger.svg");
-   }
-
-   &.header__close {
-      top: 26px;
-      background-image: url("../images/icons/close-burger.svg");
-   }
+   background-color: $black;
 }
 
+.header__burger {
+   background-image: url("../images/icons/menu-burger.svg");
+}
+
+.header__close {
+   position: absolute;
+   top: 10vh;
+   background-image: url("../images/icons/close-burger.svg");
+}
 
 .hero{
 	width: 100vw;
