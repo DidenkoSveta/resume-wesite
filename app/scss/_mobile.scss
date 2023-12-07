@@ -14,7 +14,8 @@
 @media (max-width: 1440px){
    header,
    footer,
-   .skills{
+   .skills,
+   .projects{
       width: 100vw;
       padding: 30px 6vw;
    }
@@ -23,7 +24,8 @@
 @media (max-width: 1040px){
    header,
    footer,
-   .skills{
+   .skills,
+   .projects{
       width: 100vw;
       padding: 20px 4vw;
    }
@@ -33,6 +35,22 @@
    footer{
       margin-bottom: 40px;
    }
+}
+
+@media (max-width: 768px){
+	.title{
+		font-size: 34px;
+		text-align: center;
+		margin-bottom: 40px;
+	}
+}
+
+@media (max-width: 390px){
+	.title{
+		font-size: 28px;
+		text-align: center;
+		margin-bottom: 30px;
+	}
 }
 
 @media (max-width: 1440px){
@@ -355,5 +373,36 @@
 @media (max-width: 390px){
    .skills__list{
       row-gap: 8px;
+   }
+}
+
+@media (max-width: 1240px){
+   .projects__item{
+      width: 30%;
+   }
+}
+
+@media (max-width: 768px){
+   .projects__item{
+      width: 40%;
+   }
+}
+
+@media (max-width: 490px){
+   .projects__item{
+      width: 80%;
+   }
+}
+
+@media (max-width: 768px){
+   .projects__container{
+      justify-content: space-evenly;
+   }
+}
+
+@media (min-width: 1040px){
+   .projects__item:hover{
+      transform: translateY(-10px);
+      transition: transform 0.3s linear;   
    }
 }
