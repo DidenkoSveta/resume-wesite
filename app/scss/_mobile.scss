@@ -1,4 +1,41 @@
 
+@media (max-width: 1440px){
+   body{
+      font-size: 18px;
+   }
+}
+
+@media (max-width: 1040px){
+   body{
+      font-size: 16px;
+   }
+}
+
+@media (max-width: 1440px){
+   header{
+      width: 100vw;
+      padding: 30px 6vw;
+   }
+}
+
+@media (max-width: 1040px){
+   header{
+      width: 100vw;
+      padding: 20px 4vw;
+   }
+}
+
+@media (max-width: 1440px){
+   .nav__list{
+      width: 50vw;
+   }
+}
+
+@media (max-width: 1040px){
+   .nav__list{
+      width: 100vw;
+   }
+}
 
 @media (max-width: 1040px){
    .header__menu {
@@ -24,6 +61,8 @@
 @media (max-width: 1040px){
    .header__logo{
       order: 1;
+      font-size: 18px;
+      width: 100px;
    }
 }
 
@@ -67,3 +106,124 @@
       font-size: 30px;
    }
 }
+
+@media (max-width: 1240px){
+   .hero{
+      width: 100vw;
+      padding: 80px 6vw;
+   }
+}
+
+@media (max-width: 1040px){
+   .hero{
+      width: 100vw;
+      padding: 0px 6vw;
+   }
+}
+
+@media (max-width: 1240px){
+   .hero__title{
+      font-size: 50px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 0.1em; 
+   }
+}
+
+@media (max-width: 1040px){
+   .hero__title{
+      text-align: center;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal; 
+   }
+}
+
+@media (max-width: 390px){
+   .hero__title{
+      font-size: 36px;
+   }
+}
+
+
+@media (max-width: 1040px){
+   .hero__inner{
+      align-items: center;
+      gap: 40px;
+   }
+}
+
+@media (max-width: 768px){
+   .hero__inner{
+      justify-content: space-between;
+      flex-direction: column-reverse;
+   }
+}
+
+@media (max-width: 1240px){
+   .hero__image{
+      height: 300px;
+   }
+}
+
+@media (max-width: 1040px){
+   .hero__image{
+      height: 280px;
+   }
+}
+
+@media (max-width: 390px){
+   .hero__image{
+      height: 240px;
+   }
+}
+
+@media (max-width: 390px){
+   .hero__image-bg{
+      height: 200px;
+      width: 200px;
+   }
+}
+
+
+@media (max-width: 1240px){
+   .hero__social-link:nth-child(1){
+      top: 100px;
+      left: -170px;
+   }
+}
+
+@media (max-width: 1240px){
+   .hero__social-link:nth-child(2){
+      top: -20px;
+      left: 50px;
+   }
+}
+
+@media (max-width: 1240px){
+   .hero__social-link:nth-child(3){
+      top: 140px;
+      left: 160px;
+   }
+}
+
+@media (max-width: 1040px){
+   .hero__social-link{
+      display: none;
+   }
+}
+
+@media (max-width: 1040px){
+   .hero__actions{
+      gap: 20px;
+   }
+}
+
+@media (max-width: 390px){
+   .hero__action{
+      padding: 14px 18px;
+   }
+}
+

@@ -9,6 +9,7 @@
    display: flex;
    width: 100%;
    justify-content: space-between;
+   align-items: center;
 }
 
 .header__logo{
@@ -90,7 +91,7 @@
 .header__close {
    display: none;
    width: 50px;
-   height: 50px;
+   height: 40px;
    background-size: contain;
    background-repeat: no-repeat;
    border: none;
