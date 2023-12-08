@@ -3,6 +3,7 @@
 @import "reset";
 @import "global";
 
+// Контейнер хедера
 .header__container {
    position: relative;
    display: flex;
@@ -11,17 +12,18 @@
    align-items: center;
 }
 
+// Логотип с градиентом
 .header__logo {
    background: $gradient;
    font-size: 24px;
    font-weight: 500;
    -webkit-background-clip: text;
-   color: transparent;
    background-clip: text;
-   -webkit-text-fill-color: transparent;
+   -webkit-text-fill-color: transparent; 
    text-transform: uppercase;
 }
 
+// Навигационный список
 .nav__list {
    display: flex;
    width: 40vw;
@@ -29,27 +31,26 @@
    flex-wrap: wrap;
 }
 
-.nav__item {
-   position: relative;
-}
-
+// Пункты навигации
+.nav__item,
 .footer__nav-item {
    position: relative;
 }
 
-.nav__link {
-   display: flex;
-   color: $green;
-}
-
+// Ссылки навигации
+.nav__link,
 .footer__nav-link {
    display: flex;
+   color: $green; // Цвет ссылок
 }
 
+// Ховер эффект для ссылок
+.nav__link:hover,
 .footer__nav-link:hover {
    color: $green;
 }
 
+// Псевдоэлементы для ссылок
 .nav__link::before,
 .nav__link::after,
 .footer__nav-link::before,
@@ -61,40 +62,39 @@
    transition: opacity 0.3s ease;
 }
 
+// Контент псевдоэлементов
 .nav__link::before,
 .footer__nav-link::before {
    content: "\02C2";
    left: -16px;
 }
-
 .nav__link::after,
 .footer__nav-link::after {
    content: "\02C3";
    right: -16px;
 }
 
+// Появление псевдоэлементов при ховере
 .nav__link:hover::before,
-.nav__link:hover::after {
-   opacity: 1;
-}
-
+.nav__link:hover::after,
 .footer__nav-link:hover::before,
 .footer__nav-link:hover::after {
    opacity: 1;
 }
 
+// Стили переключателя языков
 .language-switcher__button {
    background: none;
    border: none;
    color: $white;
    text-transform: uppercase;
    font-weight: 500;
+   &:hover {
+      color: $purple;
+   }
 }
 
-.language-switcher__button:hover {
-   color: $purple;
-}
-
+// Линия между кнопками смены языка
 .header__language-line {
    display: inline-block;
    width: 2px;
@@ -103,6 +103,7 @@
    margin: 0 5px;
 }
 
+// Бургер меню и кнопка закрытия
 .header__burger,
 .header__close {
    display: none;
@@ -118,7 +119,7 @@
 
 .header__burger {
    background-image: url("../images/icons/menu-burger.svg");
-   background-color: #00000000;
+   background-color: transparent;
 }
 
 .header__close {
@@ -127,10 +128,13 @@
    background-image: url("../images/icons/close-burger.svg");
 }
 
+// Стилизация главной hero секции
 .hero {
    position: relative;
    width: 100vw;
    padding: 80px 14vw;
+
+   // Внутренняя структура hero секции
    &__inner {
       width: 100%;
       display: flex;
@@ -138,18 +142,23 @@
       align-items: flex-start;
       flex-wrap: wrap;
    }
+
+   // Название и действия в hero секции
    &__name {
       display: flex;
       flex-direction: column;
       gap: 40px;
    }
+
+   // Заголовок hero секции
    &__title {
       font-family: "Poppins", sans-serif;
       font-size: 60px;
-      font-style: normal;
       font-weight: 500;
-      line-height: normal;
+      line-height: 140%;
       letter-spacing: 4px;
+
+      // Особый стиль для имени в заголовке
       &-name {
          background: $gradient;
          -webkit-background-clip: text;
@@ -157,27 +166,39 @@
          color: transparent;
       }
    }
+
+   // Кнопки в hero секции
    &__actions {
       display: flex;
       gap: 30px;
    }
+
+   // Стиль кнопок действия
    &__action {
       padding: 18px 26px;
       border-radius: 100px;
+
+      // При наведении масштабирование кнопки
+      &:hover {
+         transform: scale(1.1);
+         transition: transform 0.3s linear;
+      }
    }
-   &__action:hover {
-      transform: scale(1.1);
-      transition: transform 0.3s linear;
-   }
+
+   // Стиль кнопки email
    &__email {
       background: $green;
       color: $black;
       font-weight: 500;
    }
+
+   // Стиль кнопки скачивания резюме
    &__download-cv {
       background: $gray;
       font-weight: 400;
    }
+
+   // Контейнер для изображения
    &__image-container {
       position: relative;
       display: flex;
@@ -185,9 +206,8 @@
       align-items: center;
       gap: 60px;
    }
-   &__image {
-      z-index: 2;
-   }
+
+   // Стилизация фона изображения
    &__image-bg {
       position: absolute;
       left: 60px;
@@ -197,46 +217,52 @@
       opacity: 0.3;
       background: $gradient;
       filter: blur(150px);
-      z-index: 1;
+      z-index: -1;
    }
+
+   // Стили для социальных иконок
    &__social-link {
       z-index: 2;
       position: absolute;
       width: 70px;
-      display: block;
       padding: 15px;
       background: $gray;
       border-radius: 100px;
+
+      // При наведении масштабирование иконки
+      &:hover {
+         transform: scale(1.2);
+         transition: transform 0.3s linear;
+      }
    }
-   &__social-link:hover {
-      transform: scale(1.2);
-      transition: transform 0.3s linear;
-   }
+
+   // Относительное позиционирование для социальных иконок
    &__social-icons {
       position: relative;
    }
 }
 
+// Позиционирование социальных иконок
 .hero__social-link:nth-child(1) {
    top: 120px;
    left: -210px;
 }
-
 .hero__social-link:nth-child(2) {
    top: -20px;
    left: 50px;
 }
-
 .hero__social-link:nth-child(3) {
    top: 140px;
    left: 190px;
 }
 
+// Стили бегущей строки навыков
 .hero__skills-marquee {
    position: absolute;
    left: 0;
 }
 
+// Стилизация трека бегущей строки
 .skills-marquee__track {
    transform: rotate(-1.7deg);
    margin-top: -20px;
@@ -246,71 +272,95 @@
    padding: 20px 0;
 }
 
+// Альтернативные стили бегущей строки для футера
+.hero__skills--footer-marquee {
+   margin-top: -10px;
+   transform: rotate(2deg);
+}
+
+// Стилизация навыков в бегущей строке
 .skills-marquee__skill {
    display: flex;
    align-items: center;
    white-space: nowrap;
    text-transform: uppercase;
    color: $green;
+
+   // Стилизация разделителя навыков
+   &::before {
+      content: "";
+      display: inline-block;
+      width: 8px;
+      height: 2px;
+      background-color: $green;
+      margin: 0 10px;
+   }
 }
 
-.skills-marquee__skill::before {
-   content: "";
-   display: inline-block;
-   width: 8px;
-   height: 2px;
-   background-color: $green;
-   margin: 0 10px;
-}
-
+// Футер
 .footer {
    display: flex;
    flex-direction: column;
    position: relative;
    gap: 50px;
    margin-bottom: 80px;
+
+   // Социальные иконки в футере
    &__socials {
       display: flex;
       justify-content: space-between;
       width: 400px;
       margin-top: 160px;
    }
+
+   // Стиль социальных ссылок
    &__social-link {
       display: inline-block;
       padding: 15px;
       border-radius: 100px;
       background-color: $gray;
+      &:hover {
+         transform: scale(1.1);
+         transition: transform 0.3s linear;
+         cursor: pointer;
+      }
    }
-   &__social-link:hover {
-      transform: scale(1.1);
-      transition: transform 0.3s linear;
-      cursor: pointer;
-   }
+
+   // Стиль для электронной почты
    &__email {
       font-size: 40px;
       font-family: "Poppins", sans-serif;
       font-weight: 500;
       letter-spacing: 1.2px;
    }
+
+   // Навигационный список в футере
    &__nav-list {
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
       width: 30vw;
    }
+
+   // Контейнер навигации
    &__navigation {
       margin-top: 20px;
    }
 }
 
+// Раздел навыков
 .skills {
    flex-direction: column;
+   
+   // Категории навыков
    &__categories {
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
       width: 100%;
    }
+
+   // Список навыков
    &__list {
       display: flex;
       flex-direction: row;
@@ -318,6 +368,8 @@
       justify-content: space-between;
       row-gap: 20px;
    }
+
+   // Элемент списка навыков
    &__item {
       display: flex;
       justify-content: center;
@@ -330,20 +382,33 @@
    }
 }
 
+
+// Стилизация блока проектов
 .projects {
    display: inline-flex;
    flex-direction: column;
+
+   // Контейнер для элементов проекта
    &__container {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
       row-gap: 50px;
    }
+
+   // Элемент проекта
    &__item {
       display: flex;
       position: relative;
       width: 30%;
+
+      // Информация о проекте появляется при наведении
+      &:hover .projects__info {
+         opacity: 1;
+      }
    }
+
+   // Информационный блок внутри элемента проекта
    &__info {
       display: flex;
       flex-direction: column;
@@ -351,19 +416,25 @@
       justify-content: center;
       gap: 30px;
       position: absolute;
+      top: 0;
+      left: 0;
       opacity: 0;
       width: 100%;
       height: 100%;
       transition: opacity 0.5s ease;
       border-radius: 16px;
-      background: linear-gradient(0deg, rgba(26, 26, 26, 0.7) 0%, rgba(26, 26, 26, 0.8) 100%);
+      background: linear-gradient(0deg, rgba(26, 26, 26, 0.7), rgba(26, 26, 26, 0.8));
    }
+
+   // Название проекта
    &__name {
       font-style: normal;
       font-weight: 700;
       line-height: normal;
       text-transform: uppercase;
    }
+
+   // Кнопка в информационном блоке
    &__btn {
       background: $green;
       border-radius: 50px;
@@ -371,46 +442,47 @@
       color: $black;
       font-weight: 500;
       font-size: 16px;
+      
+      // Эффект наведения для кнопки
+      &:hover {
+         transform: scale(1.1);
+         transition: transform 0.3s linear;
+      }
    }
-   &__btn:hover {
-      transform: scale(1.1);
-      transition: transform 0.3s linear;
-   }
+
+   // Изображение проекта
    &__image {
       border-radius: 16px;
       width: 100%;
-      height: 100%;
+      height: auto;
    }
 }
 
-.projects__item:hover {
-   .projects__info {
-      opacity: 1;
-      transition: opacity 0.5s ease;
-   }
-}
 
+// Стилизация основных контейнеров для разделов навыков и образования
 .skills-languages,
 .about-education {
    justify-content: space-between;
 }
 
+// Общие стили для разделов софт-скиллов, языков, обо мне и образования
 .soft-skills,
 .languages,
 .about-me,
- .education{
+.education {
    display: flex;
    flex-direction: column;
    align-items: flex-start;
    position: relative;
    border-radius: 20px;
-   padding: 30px 30px;
+   padding: 30px;
    background: $black;
    z-index: 1;
+   
+   // Декоративные фоны для блоков
    &-bg:nth-child(2n + 1) {
+      // Подложка для фона
       position: absolute;
-      width: 99%;
-      height: 99%;
       top: 0;
       right: 0;
       bottom: 0;
@@ -420,26 +492,30 @@
       z-index: -1;
    }
    &-bg:nth-child(2n) {
+      // Градиентный фон
       position: absolute;
-      width: 100%;
-      height: 100%;
-      background: $gradient;
-      border-radius: 20px;
-      z-index: -2;
       margin: -1px;
       top: -0.25%;
       left: -0.25%;
       bottom: -0.5%;
       right: -0.4%;
+      background: $gradient;
+      border-radius: 20px;
+      z-index: -2;
    }
-   &__title{
+
+   // Заголовок для каждого блока
+   &__title {
       margin-bottom: 40px;
    }
 }
 
+// Стили для разделов софт-скиллов и обо мне
 .soft-skills,
 .about-me {
    width: 59%;
+
+   // Список для софт-скиллов и обо мне
    &__list {
       display: flex;
       flex-direction: column;
@@ -448,15 +524,19 @@
       margin-left: 40px;
       width: 90%;
    }
+
+   // Пункт списка
    &__item {
       margin-bottom: 0.5rem;
-      list-style-type: disc;
    }
 }
 
+// Стили для разделов языков и образования
 .languages,
 .education {
    width: 38%;
+
+   // Список для языков и образования
    &__list {
       display: flex;
       flex-direction: column;
@@ -465,17 +545,16 @@
       width: 90%;
    }
 
+   // Элемент списка для языков и образования
    &__item {
       display: flex;
       align-items: flex-start;
       flex-direction: column;
       gap: 16px;
       margin-bottom: 0.5rem;
-
-      & .languages__name {
-         margin-right: 1rem;
-      }
    }
+   
+   // Название языка
    &__name {
       font-family: "Poppins", sans-serif;
       color: $green;
@@ -483,10 +562,12 @@
       font-weight: 400;
    }
 
+   // Уровень владения языком
    &__level {
       display: flex;
       align-items: center;
 
+      // Точка уровня владения языком
       .languages__level-dot {
          width: 18px;
          height: 18px;
@@ -495,6 +576,7 @@
          border: solid 1px $white;
          margin-right: 5px;
 
+         // Активный уровень владения языком
          &--active {
             background-color: $white;
          }
@@ -502,7 +584,23 @@
    }
 }
 
-.languages__lavel{
+
+.education {
+   &__content {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 90%;
+   }
+   &__time,
+   &__institution {
+      font-size: 14px;
+      font-weight: 300;
+      width: 76%;
+   }
+}
+
+.languages__lavel {
    flex-wrap: wrap;
    gap: 5px;
    width: 100%;
@@ -513,21 +611,18 @@
    margin-left: 10px;
 }
 
-.about-me{
+.about-me {
    display: flex;
    flex-direction: column;
    gap: 1rem;
-   &__title{
+   &__title {
    }
 }
 
 .soft-skills__list,
-.about-me__content{
-   margin-left: 20px!important;
+.about-me__content {
+   margin-left: 20px !important;
    width: 90%;
-
 }
-
-
 
 @import "mobile";

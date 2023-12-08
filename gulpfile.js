@@ -54,14 +54,16 @@ function images() {
 // Функция для компиляции и объединения JavaScript файлов
 function scripts() {
   return src([
-    'node_modules/swiper/swiper-bundle.min.js', // Подключаем Swiper JS
-    'app/js/main.js'
+    'node_modules/swiper/swiper-bundle.min.js', // Если у вас есть зависимости из node_modules
+    'app/js/modules/*.js', // Все скрипты из папки modules
+    'app/js/main.js' // Главный файл скрипта, если он должен быть последним
   ])
-    .pipe(concat('main.min.js')) // Объединяем в один файл
-    .pipe(uglify()) // Минифицируем JavaScript
-    .pipe(dest('dist/js'))
-    .pipe(browserSync.stream());
+  .pipe(concat('main.min.js')) // Объединяем в один файл
+  .pipe(uglify()) // Минифицируем JavaScript
+  .pipe(dest('dist/js')) // Выгружаем в папку dist/js
+  .pipe(browserSync.stream()); // Обновляем BrowserSync
 }
+
 
 // Функция для компиляции SCSS в CSS
 function styles() {
@@ -86,7 +88,7 @@ function fonts() {
 // Функция для наблюдения за изменениями в файлах
 function watching() {
   watch(['app/scss/**/*.scss'], styles);
-  watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts);
+  watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts); // Исключаем main.min.js из наблюдения
   watch('app/*.html', includeHTML);
   watch('app/images/**/*', images);
   watch('app/**/*.html').on('change', browserSync.reload);
