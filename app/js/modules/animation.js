@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function() {
    }, {threshold: 0.1});
  
    // Наблюдаем за элементами .skills__item, .about-me и .education
-   const elementsToAnimate = document.querySelectorAll('.skills__item, .about-me, .education, .languages, .soft-skills');
+   const elementsToAnimate = document.querySelectorAll('.skills__item, .about-me, .education, .languages, .soft-skills, .projects__item');
    elementsToAnimate.forEach(item => {
      observer.observe(item);
    });

@@ -451,7 +451,8 @@
 .education,
 .about-me,
 .soft-skills,
- .languages{
+ .languages,
+ .projects__item{
    // Исходное состояние
    opacity: 0;
    transform: translateY(20px);
