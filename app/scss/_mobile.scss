@@ -47,6 +47,7 @@
    }
 }
 
+
 @media (max-width: 1040px) {
    .title {
       font-size: 34px;
@@ -200,15 +201,25 @@
    }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1240px) {
    .hero__name {
-      gap: 30px;
+      height: 330px;
+      width: 400px;
+   }
+}
+
+@media (max-width: 1040px) {
+   .hero__name {
+      height: 280px;
+      width: 330px;
+      align-items: center;
    }
 }
 
 @media (max-width: 390px) {
    .hero__name {
-      gap: 20px;
+      height: 250px;
+      width: 100%;
    }
 }
 
@@ -237,6 +248,7 @@
       font-size: 36px;
    }
 }
+
 
 @media (max-width: 1040px) {
    .hero__inner {
@@ -570,8 +582,7 @@
    }
 }
 
-
-@media (max-width: 768px){
+@media (max-width: 768px) {
    .skills-marquee__track {
       transform: rotate(-1.7deg);
       margin-top: -20px;
@@ -582,8 +593,8 @@
    }
 }
 
-@media (max-width: 768px){
-   .skills-marquee__skill {   
+@media (max-width: 768px) {
+   .skills-marquee__skill {
       &::before {
          content: "";
          display: inline-block;

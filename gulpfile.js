@@ -54,7 +54,6 @@ function images() {
 // Функция для компиляции и объединения JavaScript файлов
 function scripts() {
   return src([
-    'node_modules/swiper/swiper-bundle.min.js', // Если у вас есть зависимости из node_modules
     'app/js/modules/*.js', // Все скрипты из папки modules
     'app/js/main.js' // Главный файл скрипта, если он должен быть последним
   ])
