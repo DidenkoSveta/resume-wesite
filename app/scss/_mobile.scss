@@ -401,12 +401,18 @@
    }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1040px) {
    .hero__skills--header-marquee {
-      margin-top: 110px;
-      transform: rotate(3deg);
+      bottom: -45px;
    }
 }
+
+@media (max-width: 768px) {
+   .hero__skills--header-marquee {
+      bottom: -85px;
+   }
+}
+
 
 @media (max-width: 1440px) {
    .skills__item {
