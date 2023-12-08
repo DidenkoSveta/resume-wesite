@@ -1,80 +1,81 @@
-
-@media (max-width: 1440px){
-   body{
+@media (max-width: 1440px) {
+   body {
       font-size: 18px;
    }
 }
 
-@media (max-width: 1040px){
-   body{
+@media (max-width: 1040px) {
+   body {
       font-size: 16px;
    }
 }
 
-@media (max-width: 1440px){
+@media (max-width: 1440px) {
    header,
    footer,
    .skills,
    .projects,
-   .skills-languages{
+   .skills-languages,
+   .about-education {
       width: 100vw;
       padding: 30px 6vw;
    }
 }
 
-@media (max-width: 1040px){
+@media (max-width: 1040px) {
    header,
    footer,
    .skills,
    .projects,
-   .skills-languages{
+   .skills-languages,
+   .about-education {
       width: 100vw;
       padding: 20px 4vw;
    }
 }
 
-@media (max-width: 1040px){
-   footer{
+@media (max-width: 1040px) {
+   footer {
       margin-bottom: 40px;
    }
 }
 
-@media (max-width: 1040px){
-	.title{
-		font-size: 34px;
-		text-align: center;
-		margin-bottom: 40px;
-	}
+@media (max-width: 1040px) {
+   .title {
+      font-size: 34px;
+      text-align: center;
+      margin-bottom: 40px;
+   }
 }
 
-@media (max-width: 390px){
-	.title{
-		font-size: 28px;
-		text-align: center;
-		margin-bottom: 30px;
-	}
+@media (max-width: 390px) {
+   .title {
+      font-size: 28px;
+      text-align: center;
+      margin-bottom: 30px;
+   }
 }
 
-@media (max-width: 1440px){
+@media (max-width: 1440px) {
    .nav__list,
-   .footer__nav-list{
+   .footer__nav-list {
       width: 50vw;
    }
 }
 
-@media (max-width: 1040px){
-   .nav__list{
+@media (max-width: 1040px) {
+   .nav__list {
       width: 100vw;
    }
 }
 
-@media (max-width: 1040px){
-   .footer__navigation{
+@media (max-width: 1040px) {
+   .footer__navigation {
       display: none;
    }
 }
 
-@media (max-width: 1040px){
+@media (max-width: 1040px) {
    .header__menu {
       display: flex;
       justify-content: center;
@@ -95,42 +96,42 @@
    }
 }
 
-@media (max-width: 1040px){
-   .header__logo{
+@media (max-width: 1040px) {
+   .header__logo {
       order: 1;
       font-size: 18px;
       width: 100px;
    }
 }
 
-@media (max-width: 1040px){
-   .header__language-switcher{
+@media (max-width: 1040px) {
+   .header__language-switcher {
       order: 3;
    }
 }
 
-@media (max-width: 1040px){
-   .header__burger{
+@media (max-width: 1040px) {
+   .header__burger {
       order: 2;
    }
 }
 
-@media (max-width: 1040px){
+@media (max-width: 1040px) {
    .header__burger,
-   .header__close{
+   .header__close {
       display: block;
    }
 }
 
-@media (max-width: 1040px){
+@media (max-width: 1040px) {
    .header__menu.show {
       transform: translateY(0vh);
       transition: all 0.6s ease;
    }
 }
 
-@media (max-width: 1040px){
-   .nav__list{
+@media (max-width: 1040px) {
+   .nav__list {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -138,328 +139,329 @@
    }
 }
 
-@media (max-width: 1040px){
-   .nav__link{
+@media (max-width: 1040px) {
+   .nav__link {
       font-size: 30px;
    }
 }
 
-@media (max-width: 1040px){
-   .language-switcher__button{
+@media (max-width: 1040px) {
+   .language-switcher__button {
       font-size: 20px;
    }
 }
 
-@media (max-width: 1240px){
-   .hero{
+@media (max-width: 1240px) {
+   .hero {
       width: 100vw;
       padding: 80px 6vw;
    }
 }
 
-@media (max-width: 1040px){
-   .hero{
+@media (max-width: 1040px) {
+   .hero {
       width: 100vw;
       padding: 0px 6vw;
    }
 }
 
-@media (max-width: 390px){
-   .hero{
+@media (max-width: 390px) {
+   .hero {
       transform: translateY(-40px);
    }
 }
 
-@media (max-width: 390px){
-   .hero__name{
+@media (max-width: 390px) {
+   .hero__name {
       gap: 20px;
    }
 }
 
-@media (max-width: 1240px){
-   .hero__title{
+@media (max-width: 1240px) {
+   .hero__title {
       font-size: 50px;
       font-style: normal;
       font-weight: 500;
       line-height: normal;
-      letter-spacing: 0.1em; 
+      letter-spacing: 0.1em;
    }
 }
 
-@media (max-width: 1040px){
-   .hero__title{
+@media (max-width: 1040px) {
+   .hero__title {
       text-align: center;
       font-size: 40px;
       font-style: normal;
       font-weight: 500;
-      line-height: normal; 
+      line-height: normal;
    }
 }
 
-@media (max-width: 390px){
-   .hero__title{
+@media (max-width: 390px) {
+   .hero__title {
       font-size: 36px;
    }
 }
 
-
-@media (max-width: 1040px){
-   .hero__inner{
+@media (max-width: 1040px) {
+   .hero__inner {
       align-items: center;
       gap: 40px;
    }
 }
 
-@media (max-width: 768px){
-   .hero__inner{
+@media (max-width: 768px) {
+   .hero__inner {
       justify-content: space-between;
       flex-direction: column-reverse;
    }
 }
 
-@media (max-width: 390px){
-   .hero__inner{
+@media (max-width: 390px) {
+   .hero__inner {
       gap: 20px;
    }
 }
 
-@media (max-width: 1240px){
-   .hero__image{
+@media (max-width: 1240px) {
+   .hero__image {
       height: 300px;
    }
 }
 
-@media (max-width: 1040px){
-   .hero__image{
+@media (max-width: 1040px) {
+   .hero__image {
       height: 280px;
    }
 }
 
-@media (max-width: 390px){
-   .hero__image{
+@media (max-width: 390px) {
+   .hero__image {
       height: 240px;
    }
 }
 
-
-@media (max-width: 390px){
-   .hero__image-bg{
+@media (max-width: 390px) {
+   .hero__image-bg {
       height: 200px;
       width: 200px;
    }
 }
 
-
-@media (max-width: 1240px){
-   .hero__social-link:nth-child(1){
+@media (max-width: 1240px) {
+   .hero__social-link:nth-child(1) {
       top: 100px;
       left: -170px;
    }
 }
 
-@media (max-width: 1240px){
-   .hero__social-link:nth-child(2){
+@media (max-width: 1240px) {
+   .hero__social-link:nth-child(2) {
       top: -20px;
       left: 50px;
    }
 }
 
-@media (max-width: 1240px){
-   .hero__social-link:nth-child(3){
+@media (max-width: 1240px) {
+   .hero__social-link:nth-child(3) {
       top: 140px;
       left: 160px;
    }
 }
 
-@media (max-width: 1040px){
-   .hero__social-link{
+@media (max-width: 1040px) {
+   .hero__social-link {
       display: none;
    }
 }
 
-@media (max-width: 1040px){
-   .hero__actions{
+@media (max-width: 1040px) {
+   .hero__actions {
       gap: 20px;
    }
 }
 
-@media (max-width: 390px){
-   .hero__action{
+@media (max-width: 390px) {
+   .hero__action {
       padding: 14px 18px;
    }
 }
 
-@media (max-width: 390px){
-   .footer{
+@media (max-width: 390px) {
+   .footer {
       gap: 30px;
    }
 }
 
-
-@media (max-width: 1040px){
-   .footer__email{
-      font-size: 32px;;
+@media (max-width: 1040px) {
+   .footer__email {
+      font-size: 32px;
    }
 }
 
-@media (max-width: 768px){
-   .footer__email{
-      font-size: 24px;;
+@media (max-width: 768px) {
+   .footer__email {
+      font-size: 24px;
    }
 }
 
-@media (max-width: 490px){
-   .footer__email{
-      font-size: 18px;;
+@media (max-width: 490px) {
+   .footer__email {
+      font-size: 18px;
    }
 }
 
-@media (max-width: 1040px){
-   .footer__socials{
+@media (max-width: 1040px) {
+   .footer__socials {
       justify-content: space-evenly;
       width: 50%;
       margin-top: 160px;
    }
 }
 
-@media (max-width: 768px){
-   .footer__socials{
+@media (max-width: 768px) {
+   .footer__socials {
       justify-content: space-between;
       width: 70%;
    }
 }
 
-
-@media (max-width: 1040px){
-   .footer__social-link{
+@media (max-width: 1040px) {
+   .footer__social-link {
       padding: 10px;
    }
 }
 
-@media (max-width: 390px){
-   .footer__social-icon{
+@media (max-width: 390px) {
+   .footer__social-icon {
       height: 30px;
    }
 }
 
-@media (max-width: 1440px){
-   .skills__item{
+@media (max-width: 1440px) {
+   .skills__item {
       width: 28vw;
-      padding: 19px 20px;  
+      padding: 19px 20px;
    }
 }
 
-@media (max-width: 1040px){
-   .skills__item{
+@media (max-width: 1040px) {
+   .skills__item {
       width: 28vw;
-      padding: 19px 20px;  
+      padding: 19px 20px;
    }
 }
 
-@media (max-width: 768px){
-   .skills__item{
+@media (max-width: 768px) {
+   .skills__item {
       width: 44vw;
-      padding: 19px 20px;  
+      padding: 19px 20px;
    }
 }
 
-@media (max-width: 390px){
-   .skills__item{
+@media (max-width: 390px) {
+   .skills__item {
       width: 90vw;
       text-align: center;
-      padding: 10px 20px;  
-      border: 1px solid var(--light, rgba(235, 235, 235, 0.40));
+      padding: 10px 20px;
+      border: 1px solid var(--light, rgba(235, 235, 235, 0.4));
    }
 }
 
-@media (max-width: 390px){
-   .skills__list{
+@media (max-width: 390px) {
+   .skills__list {
       row-gap: 8px;
    }
 }
 
-@media (max-width: 1240px){
-   .projects__item{
+@media (max-width: 1240px) {
+   .projects__item {
       width: 30%;
    }
 }
 
-@media (max-width: 768px){
-   .projects__item{
+@media (max-width: 768px) {
+   .projects__item {
       width: 40%;
    }
 }
 
-@media (max-width: 490px){
-   .projects__item{
+@media (max-width: 490px) {
+   .projects__item {
       width: 80%;
    }
 }
 
-@media (max-width: 768px){
-   .projects__container{
+@media (max-width: 768px) {
+   .projects__container {
       justify-content: space-evenly;
    }
 }
 
-@media (min-width: 1040px){
-   .projects__item:hover{
+@media (min-width: 1040px) {
+   .projects__item:hover {
       transform: translateY(-10px);
-      transition: transform 0.3s linear;   
+      transition: transform 0.3s linear;
    }
 }
 
-@media (max-width: 768px){
-   .skills-languages{
+@media (max-width: 768px) {
+   .skills-languages,
+   .about-education {
       flex-direction: column;
       gap: 20px;
    }
 }
 
-@media (max-width: 1440px){
-   .soft-skills{
+@media (max-width: 1440px) {
+   .soft-skills,
+   .about-me{
       width: 57%;
    }
 }
 
-@media (max-width: 1440px){
-   .languages{
+@media (max-width: 1440px) {
+   .languages,
+   .education{
       width: 40%;
    }
 }
 
-@media (max-width: 1140px){
-   .soft-skills{
+@media (max-width: 1140px) {
+   .soft-skills,
+   .about-me{
       width: 59%;
       padding: 20px 10px;
    }
 }
 
-@media (max-width: 1140px){
-   .languages{
+@media (max-width: 1140px) {
+   .languages,
+   .education{
       width: 38%;
       padding: 20px 10px;
    }
 }
 
-
-@media (max-width: 1140px){
-   .languages__level{
+@media (max-width: 1140px) {
+   .languages__level {
       position: relative;
    }
 }
 
-@media (max-width: 1140px){
-   .languages__lavel-text{
+@media (max-width: 1140px) {
+   .languages__lavel-text {
       position: absolute;
       top: -40px;
       right: 0;
    }
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
    .languages,
-   .soft-skills{
+   .soft-skills,
+   .about-me,
+   .education{
       align-items: center;
       width: 90%;
       &-bg:nth-child(2n + 1) {
@@ -471,10 +473,8 @@
    }
 }
 
-
-
-@media (max-width: 768px){
-   .languages__item{
+@media (max-width: 768px) {
+   .languages__item {
       align-items: normal;
    }
 }

@@ -390,18 +390,21 @@
    }
 }
 
-.skills-languages {
+.skills-languages,
+.about-education {
    justify-content: space-between;
 }
 
 .soft-skills,
-.languages {
+.languages,
+.about-me,
+ .education{
    display: flex;
    flex-direction: column;
-   align-items: center;
+   align-items: flex-start;
    position: relative;
    border-radius: 20px;
-   padding: 30px 20px;
+   padding: 30px 30px;
    background: $black;
    z-index: 1;
    &-bg:nth-child(2n + 1) {
@@ -429,9 +432,13 @@
       bottom: -0.5%;
       right: -0.4%;
    }
+   &__title{
+      margin-bottom: 40px;
+   }
 }
 
-.soft-skills {
+.soft-skills,
+.about-me {
    width: 59%;
    &__list {
       display: flex;
@@ -447,7 +454,8 @@
    }
 }
 
-.languages {
+.languages,
+.education {
    width: 38%;
    &__list {
       display: flex;
@@ -503,6 +511,21 @@
 .languages__lavel-text {
    font-size: 1rem;
    margin-left: 10px;
+}
+
+.about-me{
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+   &__title{
+   }
+}
+
+.soft-skills__list,
+.about-me__content{
+   margin-left: 20px!important;
+   width: 90%;
+
 }
 
 
