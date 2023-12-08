@@ -48,11 +48,22 @@
    }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 768px) {
    .title {
       font-size: 28px;
       text-align: center;
       margin-bottom: 30px;
+   }
+}
+
+@media (max-width: 768px){
+   .skills, 
+   .projects, 
+   .skills-languages, 
+   .about-education,
+   .education,
+   .languages{
+      margin-top: 50px;
    }
 }
 
@@ -165,9 +176,21 @@
    }
 }
 
+@media (max-width: 767px) {
+   .hero {
+      transform: translateY(-30px);
+   }
+}
+
 @media (max-width: 390px) {
    .hero {
       transform: translateY(-40px);
+   }
+}
+
+@media (max-width: 767px) {
+   .hero__name {
+      gap: 30px;
    }
 }
 
@@ -212,6 +235,7 @@
 
 @media (max-width: 768px) {
    .hero__inner {
+      gap: 26px;
       justify-content: space-between;
       flex-direction: column-reverse;
    }
@@ -476,5 +500,14 @@
 @media (max-width: 768px) {
    .languages__item {
       align-items: normal;
+   }
+}
+
+@media (max-width: 768px){
+   .soft-skills__list,
+   .about-me__content{
+      margin-left: 10px!important;
+      width: 100%;
+   
    }
 }
