@@ -80,6 +80,7 @@
    }
 }
 
+
 @media (max-width: 1440px) {
    .nav__list,
    .footer__nav-list {
@@ -223,6 +224,12 @@
    }
 }
 
+@media (max-width: 390px) {
+   .hero__email {
+      display: none!important;
+   }
+}
+
 @media (max-width: 1240px) {
    .hero__title {
       font-size: 50px;
@@ -331,7 +338,16 @@
 
 @media (max-width: 390px) {
    .hero__action {
-      padding: 14px 18px;
+      display: flex;
+      padding: 18px 38px;
+      justify-content: center;
+   }
+}
+
+@media (max-width: 390px) {
+   .hero__actions {
+      flex-direction: column;
+      gap: 20px;
    }
 }
 
@@ -598,6 +614,8 @@
       padding: 10px 0;
    }
 }
+
+
 
 @media (max-width: 768px) {
    .skills-marquee__skill {
