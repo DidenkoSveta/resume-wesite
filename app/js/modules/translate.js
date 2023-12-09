@@ -44,7 +44,7 @@ const translations = {
    },
    ru: {
       'hello': 'Привет! <br>Я ',
-      'hero__title-name': 'Светлана,<br>HTML-верстальщик',
+      'hero__title-name': 'Светлана,<br>Верстальщик',
       'footer__nav-link__portfolio': 'Портфолио',
       'footer__nav-link__about': 'Обо мне',
       'footer__nav-link__skills': 'Навыки',

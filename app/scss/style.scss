@@ -13,15 +13,30 @@
 }
 
 // Логотип с градиентом
-.header__logo {
-   background: $gradient;
+@keyframes gradientAnimation {
+   0% {
+     background-position: 0% 50%;
+   }
+   50% {
+     background-position: 100% 50%;
+   }
+   100% {
+     background-position: 0% 50%;
+   }
+ }
+ 
+ .header__logo {
    font-size: 24px;
    font-weight: 500;
+   text-transform: uppercase;
+   background: linear-gradient(270deg, #42D392, #647EFF, #42D392, #647EFF);
+   background-size: 200% 200%;
    -webkit-background-clip: text;
    background-clip: text;
    -webkit-text-fill-color: transparent;
-   text-transform: uppercase;
-}
+   animation: gradientAnimation 6s ease infinite;
+ }
+ 
 
 // Навигационный список
 .nav__list {
@@ -197,7 +212,7 @@
       flex-direction: column;
       justify-content: space-between;
       height: 360px;
-      width: 700px;
+      width: 500px;
       gap: 40px;
    }
 
@@ -212,10 +227,12 @@
       // Особый стиль для имени в заголовке
       &-name {
          position: relative;
-         background: $gradient;
+         background: linear-gradient(270deg, #42D392, #647EFF, #42D392, #647EFF);
+         background-size: 200% 200%;
          -webkit-background-clip: text;
          background-clip: text;
-         color: transparent;
+         -webkit-text-fill-color: transparent;
+         animation: gradientAnimation 6s ease infinite;
       }
    }
 
