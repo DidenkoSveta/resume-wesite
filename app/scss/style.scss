@@ -109,6 +109,12 @@
    }
 }
 
+// Стили для активного переключателя
+.language-switcher__button--active {
+   color: $purple!important; 
+ }
+ 
+
 // Линия между кнопками смены языка
 .header__language-line {
    display: inline-block;

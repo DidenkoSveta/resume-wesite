@@ -1,7 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
-// Объекты с переводами
-const translations = {
-   en: {
+  // Объекты с переводами
+  const translations = {
+    en: {
+      'header__logo': 'Didenko Svetlana',
       'hello': 'Hello! <br>I\'m ',
       'hero__title-name': 'Svetlana,<br>HTML-Coder',
       'footer__nav-link__portfolio': 'Portfolio',
@@ -41,8 +42,9 @@ const translations = {
       'languages__name2': 'ENGLISH',
       'languages__lavel-text1': 'native',
       'languages__lavel-text2': 'elementary',
-   },
-   ru: {
+    },
+    ru: {
+      'header__logo': 'Диденко Светлана',
       'hello': 'Привет! <br>Я ',
       'hero__title-name': 'Светлана,<br>Верстальщик',
       'footer__nav-link__portfolio': 'Портфолио',
@@ -82,58 +84,58 @@ const translations = {
       'languages__name2': 'АНГЛИЙСКИЙ',
       'languages__lavel-text1': 'родной',
       'languages__lavel-text2': 'начальный уровень',
-   }
-};
-
-const typingElement = document.querySelector('.hero__title-name');
-let textToType = translations['en']['hero__title-name'];
-let typedText = '';
-let charIndex = 0;
-
-function typeCharacter() {
-  if (charIndex < textToType.length) {
-    if (textToType[charIndex] === '<' && textToType.substring(charIndex, charIndex + 4) === '<br>') {
-      typedText += '<br>';
-      charIndex += 4;
-    } else {
-      typedText += textToType[charIndex++];
     }
-    typingElement.innerHTML = typedText;
-    setTimeout(typeCharacter, 60);
+  };
+
+  const typingElement = document.querySelector('.hero__title-name');
+  let textToType = translations['en']['hero__title-name'];
+  let typedText = '';
+  let charIndex = 0;
+
+  function typeCharacter() {
+    if (charIndex < textToType.length) {
+      if (textToType[charIndex] === '<' && textToType.substring(charIndex, charIndex + 4) === '<br>') {
+        typedText += '<br>';
+        charIndex += 4;
+      } else {
+        typedText += textToType[charIndex++];
+      }
+      typingElement.innerHTML = typedText;
+      setTimeout(typeCharacter, 60);
+    }
   }
-}
 
-function changeLanguage(lang) {
-  Object.keys(translations[lang]).forEach((key) => {
-    const elements = document.querySelectorAll('.' + key);
-    elements.forEach((element) => {
-      element.innerHTML = translations[lang][key];
+  function changeLanguage(lang) {
+    Object.keys(translations[lang]).forEach((key) => {
+      const elements = document.querySelectorAll('.' + key);
+      elements.forEach((element) => {
+        element.innerHTML = translations[lang][key];
+      });
     });
+
+    textToType = translations[lang]['hero__title-name'];
+    typedText = '';
+    charIndex = 0;
+    typeCharacter();
+  }
+
+  document.querySelector('.lang-en').addEventListener('click', () => changeLanguage('en'));
+  document.querySelector('.lang-ru').addEventListener('click', () => changeLanguage('ru'));
+
+  // Анимация появления элементов
+  let observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("in-view");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  const elementsToAnimate = document.querySelectorAll('.skills__item, .about-me, .education, .languages, .soft-skills, .projects__item');
+  elementsToAnimate.forEach(item => {
+    observer.observe(item);
   });
 
-  textToType = translations[lang]['hero__title-name'];
-  typedText = '';
-  charIndex = 0;
   typeCharacter();
-}
-
-document.querySelector('.lang-en').addEventListener('click', () => changeLanguage('en'));
-document.querySelector('.lang-ru').addEventListener('click', () => changeLanguage('ru'));
-
-// Анимация появления элементов
-let observer = new IntersectionObserver((entries, observer) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add("in-view");
-      observer.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.1 });
-
-const elementsToAnimate = document.querySelectorAll('.skills__item, .about-me, .education, .languages, .soft-skills, .projects__item');
-elementsToAnimate.forEach(item => {
-  observer.observe(item);
-});
-
-typeCharacter();
 });
