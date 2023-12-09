@@ -1,3 +1,4 @@
+//Убираем пустую якорную ссылку
 window.onload = function() {
    // Проверяем, есть ли в адресе хэш и перемещаемся в начало страницы
    if (window.location.hash) {
@@ -7,3 +8,25 @@ window.onload = function() {
    }
  };
  
+
+
+ //Правная прокрутка по якорям
+ document.addEventListener('DOMContentLoaded', () => {
+  const anchors = document.querySelectorAll('a[href^="#"]');
+
+  for (let anchor of anchors) {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault(); // Предотвращаем стандартное поведение клика по ссылке
+
+      let targetId = this.getAttribute('href'); // Получаем значение атрибута href
+      let targetElement = document.querySelector(targetId); // Находим элемент, на который ссылается якорь
+
+      if (targetElement) {
+        targetElement.scrollIntoView({ 
+          behavior: 'smooth', // Плавная прокрутка
+          block: 'start' // Прокрутка до начала элемента
+        });
+      }
+    });
+  }
+});
