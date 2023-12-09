@@ -250,6 +250,8 @@
 
    // Стиль кнопок действия
    &__action {
+      display: flex;
+      text-align: center;
       padding: 18px 26px;
       border-radius: 100px;
 

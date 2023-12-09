@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
       'nav__link-about': 'Обо мне',
       'nav__link-education': 'Образование',
       'nav__link-contacts': 'Контакты',
-      'hero__email': 'Написать мне',
+      'hero__email': 'Написать',
       'hero__download-cv': 'Скачать резюме',
       'projects__title': 'Последние проекты',
       'projects__name-corporate': 'Корпоративный веб-сайт',
