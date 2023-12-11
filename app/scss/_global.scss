@@ -31,7 +31,10 @@ footer,
 .skills,
 .projects,
 .skills-languages,
-.about-education {
+.about-education,
+.project-overview,
+.project,
+.result {
 	width: 100vw;
 	padding: 30px 14vw;
 	display: flex;
@@ -40,7 +43,9 @@ footer,
 // Отступы секций
 .projects,
 .skills-languages,
-.about-education {
+.about-education,
+.project,
+.result {
 	margin-top: 100px;
 }
 

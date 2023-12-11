@@ -15,28 +15,27 @@
 // Логотип с градиентом
 @keyframes gradientAnimation {
    0% {
-     background-position: 0% 50%;
+      background-position: 0% 50%;
    }
    50% {
-     background-position: 100% 50%;
+      background-position: 100% 50%;
    }
    100% {
-     background-position: 0% 50%;
+      background-position: 0% 50%;
    }
- }
- 
- .header__logo {
+}
+
+.header__logo {
    font-size: 24px;
    font-weight: 500;
    text-transform: uppercase;
-   background: linear-gradient(270deg, #42D392, #647EFF, #42D392, #647EFF);
+   background: linear-gradient(270deg, #42d392, #647eff, #42d392, #647eff);
    background-size: 200% 200%;
    -webkit-background-clip: text;
    background-clip: text;
    -webkit-text-fill-color: transparent;
    animation: gradientAnimation 6s ease infinite;
- }
- 
+}
 
 // Навигационный список
 .nav__list {
@@ -111,9 +110,8 @@
 
 // Стили для активного переключателя
 .language-switcher__button--active {
-   color: $purple!important; 
- }
- 
+   color: $purple !important;
+}
 
 // Линия между кнопками смены языка
 .header__language-line {
@@ -233,7 +231,7 @@
       // Особый стиль для имени в заголовке
       &-name {
          position: relative;
-         background: linear-gradient(270deg, #42D392, #647EFF, #42D392, #647EFF);
+         background: linear-gradient(270deg, #42d392, #647eff, #42d392, #647eff);
          background-size: 200% 200%;
          -webkit-background-clip: text;
          background-clip: text;
@@ -477,8 +475,8 @@
 .education,
 .about-me,
 .soft-skills,
- .languages,
- .projects__item{
+.languages,
+.projects__item {
    // Исходное состояние
    opacity: 0;
    transform: translateY(20px);
@@ -723,14 +721,173 @@
    display: flex;
    flex-direction: column;
    gap: 1rem;
-   &__title {
-   }
 }
 
 .soft-skills__list,
 .about-me__content {
    margin-left: 20px !important;
    width: 90%;
+}
+
+.project-preview {
+   margin-top: 80px;
+   margin-bottom: 3vw;
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+}
+
+.project-overview {
+   position: relative;
+   &-wrapper {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: 80px;
+   }
+   &__image-container {
+      width: 50%;
+   }
+   &-icon-link {
+      display: flex;
+      gap: 20px;
+      gap: 20px;
+      align-items: flex-end;
+   }
+   &__title {
+      position: relative;
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 0.02em;
+      font-family: "Poppins", sans-serif;
+      position: relative;
+      background: linear-gradient(270deg, #42d392, #647eff, #42d392, #647eff);
+      background-size: 200% 200%;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: gradientAnimation 6s ease infinite;
+   }
+   &__title::after {
+      content: " ";
+      position: absolute;
+      display: inline-block;
+      width: 60%;
+      height: 1px;
+      background: $green;
+      bottom: -10px;
+      left: 0;
+   }
+   &__subtitle {
+      color: $white;
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 400;
+   }
+   &__link {
+      color: $green;
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 500;
+      text-decoration-line: underline;
+   }
+   &__link:hover {
+      color: #647eff;
+   }
+   &__technologies {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      &-title {
+         color: $white;
+         text-transform: uppercase;
+         font-weight: 600;
+         font-size: 20px;
+      }
+      &-item {
+         font-size: 20px;
+         font-weight: 500;
+         list-style-type: disc;
+         margin-left: 20px;
+      }
+      &-list {
+         display: flex;
+         flex-direction: column;
+         gap: 4px;
+      }
+   }
+   &__header {
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+   }
+}
+
+.project{
+   width: 100%;
+   flex-direction: column;
+   display: flex;
+   flex-direction: column;
+   gap: 100px;
+   &__features{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+   }
+   &__wrapper{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+   }
+   &__heading{
+      color: $green;
+   }
+   &__challenge{
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      width: 48%;
+   }
+   &__solution{
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      width: 48%;
+   }
+}
+
+.project__feature {
+   width: 110px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 20px;
+   &-item-circle {
+      display: flex;
+      width: 70px;
+      height: 70px;
+      border-radius: 100px;
+      background: #41a7cc;
+      align-items: center;
+      justify-content: center;
+   }
+   &-item {
+      width: 62px;
+      height: 62px;
+      border-radius: 100px;
+      background: #41a7cc;
+      border: 2px solid $black;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+   }
+   &-text{
+      text-align: center;
+      font-size: 16px;
+      line-height: normal;
+   }
 }
 
 @import "mobile";

@@ -16,7 +16,10 @@
    .skills,
    .projects,
    .skills-languages,
-   .about-education {
+   .about-education,
+   .project-overview,
+   .project,
+   .result {
       width: 100vw;
       padding: 30px 6vw;
    }
@@ -28,7 +31,10 @@
    .skills,
    .projects,
    .skills-languages,
-   .about-education {
+   .about-education,
+   .project-overview,
+   .project,
+   .result {
       width: 100vw;
       padding: 20px 4vw;
    }
@@ -627,5 +633,257 @@
          background-color: $green;
          margin: 0 8px;
       }
+   }
+}
+
+@media (max-width: 1240px){
+   .project-overview-wrapper{
+      width: 40%;
+      gap: 30px;
+   }
+}
+
+@media (max-width: 1240px){
+   .project-overview__header{
+      gap: 20px;
+   }
+}
+
+@media (max-width: 1240px){
+   .project-overview__image-container{
+      width: 60%;
+   }
+}
+
+@media (max-width: 1240px){
+   .project-overview__subtitle{
+      font-size: 20px;
+      width: 90%;
+   }
+}
+
+@media (max-width: 1240px){
+   .project-overview__link,
+   .project-overview__technologies-title,
+   .project-overview__technologies-item{
+      font-size: 20px;
+   }
+}
+
+@media (max-width: 1240px) {
+   .project-overview__title {
+      font-size: 34px;
+   }
+}
+
+@media (max-width: 1040px) {
+   .project-overview__title {
+      font-size: 26px;
+   }
+}
+
+@media (max-width: 768px) {
+   .project-overview__title{
+      font-size: 28px;
+   }
+}
+
+@media (max-width: 1040px){
+   .project-overview-wrapper{
+      width: 45%;
+      gap: 30px;
+   }
+}
+
+@media (max-width: 1040px){
+   .project-overview__header{
+      gap: 20px;
+   }
+}
+
+@media (max-width: 1040px){
+   .project-overview__image-container{
+      width: 55%;
+   }
+}
+
+@media (max-width: 1040px){
+   .project-overview__subtitle{
+      font-size: 16px;
+      width: 90%;
+   }
+}
+
+@media (max-width: 1040px){
+   .project-overview-icon-svg{
+      height: 26px;
+   }
+}
+
+@media (max-width: 1040px){
+   .project-overview__technologies-title,
+   .project-overview__technologies-item{
+      font-size: 16px;
+   }
+}
+
+@media (max-width: 1240px) {
+   .project-overview__title {
+      font-size: 34px;
+   }
+}
+
+@media (max-width: 1040px) {
+   .project-overview__title {
+      font-size: 26px;
+   }
+}
+
+@media (max-width: 490px) {
+   .project-overview__title{
+      font-size: 22px;
+      text-align: center;
+   }
+}
+
+@media (max-width: 490px) {
+   .project-overview__title::after{
+      left: 20%;
+   }
+}
+
+
+@media (max-width: 768px){
+   .project-preview{
+      align-items: flex-end;
+   }
+}
+
+@media (max-width: 768px){
+   .project-overview-wrapper{
+      width: 30%;
+      gap: 30px;
+   }
+}
+
+@media (max-width: 768px){
+   .project-overview__header{
+      align-items: center;
+      gap: 20px;
+      width: 500px;
+   }
+}
+
+@media (max-width: 490px){
+   .project-overview__header{
+      gap: 20px;
+      width: 100%;
+   }
+}
+
+@media (max-width: 768px){
+   .project-overview__image-container{
+      width: 55%;
+   }
+}
+
+@media (max-width: 768px){
+   .project-overview__subtitle{
+      font-size: 16px;
+      width: 90%;
+   }
+}
+
+@media (max-width: 768px){
+   .project-overview-icon-svg{
+      height: 26px;
+   }
+}
+
+
+@media (max-width: 490px){
+   .project-preview{
+      flex-direction: column;
+      gap: 30px;
+      margin-top: 40px;
+   }
+}
+
+@media (max-width: 490px){
+   .project-overview-wrapper{
+      width: 100%;
+      gap: 30px;
+   }
+}
+
+@media (max-width: 490px){
+   .project-overview__header{
+      gap: 20px;
+      width: 340px;
+   }
+}
+
+@media (max-width: 390px){
+   .project-overview__header{
+      gap: 20px;
+      width: 300px;
+   }
+}
+
+
+@media (max-width: 490px){
+   .project-overview__image-container{
+      width: 100%;
+   }
+}
+
+
+@media (max-width: 490px){
+   .project-overview__technologies{
+      align-items: center;
+   }
+}
+
+@media (max-width: 768px){
+   .project__features{
+      gap: 50px;
+   }
+}
+
+@media (max-width: 768px){
+   .project__feature{
+      width: 24%;
+   }
+}
+
+@media (max-width: 768px){
+   .project__challenge,
+   .project__solution{
+      width: 100%;
+   }
+}
+
+@media (max-width: 768px){
+   .project__wrapper{
+      flex-direction: column;
+      gap: 40px;
+   }
+}
+
+@media (max-width: 768px){
+   .project__feature{
+      width: 24%;
+   }
+}
+
+@media (max-width: 420px){
+   .project__features{
+      gap: 30px;
+   }
+}
+
+@media (max-width: 420px){
+   .project__feature{
+      width: 26%;
    }
 }
