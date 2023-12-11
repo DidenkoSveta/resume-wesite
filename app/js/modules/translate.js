@@ -66,6 +66,17 @@ document.addEventListener('DOMContentLoaded', () => {
       'result__text-wp1': 'The resulting "WebPerspective" website is a functional tool that is both user-friendly and meets current market demands. Its design is in harmony with the agency\'s corporate style, and thanks to the responsive layout, it presents well on various devices.',
       'result__text-wp2': 'The ease of content management via WordPress and foundational SEO optimization enables the agency to maintain the site\'s information relevance independently.',
       'result__text-wp3': 'This project showcases my ability to create practical and effective web solutions tailored to enhance business processes and solidify the company\'s digital presence.',
+      'project-overview__title-ts': 'Corporate Website Development for "TS-PRIME"',
+      'project-overview__subtitle-ts': 'Metalworking Equipment Supplier',
+      'project__description-ts-01': 'The task was to develop a modern website for TS-Prime, providing users with comprehensive information about the company\'s services. The client demanded a unique design based on provided examples. The site needed to be intuitively understandable for a broad target audience while maintaining a modern appearance.',
+      'project__description-ts-02': 'A unique design was implemented in a strict style. The site is enriched with numerous elements but avoids information overload. Dynamic animations on CSS and JavaScript were introduced to enhance perception. An equipment and services catalog was created, along with a side menu for easier navigation through categories. The design was executed in a light theme with orange accents, reflecting the corporate style of the company.',
+      'result__text-ts1': 'The development of the website for "TS-PRIME" marked a significant step for the company in the digital arena. The resulting website is a convenient tool for users and meets current market standards. It features a clear structure and responsive design, ensuring its effective use across all devices. The capability for TS-PRIME to manage content and basic SEO optimization allows for maintaining the site\'s relevancy.',
+      'result__text-ts2': 'This project showcases my ability to develop practical web solutions that contribute to enhancing the company\'s operational efficiency and its online presence.',
+      '': '',
+      '': '',
+      '': '',
+      '': '',
+      '': '',
       '': '',
       '': '',
       '': '',
@@ -139,7 +150,13 @@ document.addEventListener('DOMContentLoaded', () => {
       'project__description-wp-02': 'Дизайн был направлен на минимализм, избегая ненужного визуального шума в пользу крупных, выразительных элементов. Основное внимание было уделено контенту и типографике для обеспечения ясности. Была реализована простая структура для предотвращения перегрузки пользователя и упрощения навигации. Результатом является сайт, который выглядит просто, но стильно.',
       'result__text-wp1': 'В результате работы над сайтом "WebPerspective" получился функциональный инструмент, который удобен для пользователей и соответствует современным требованиям рынка. Его дизайн гармонирует с корпоративным стилем агентства, и благодаря отзывчивой верстке он хорошо смотрится на различных устройствах.',
       'result__text-wp2': 'Простота управления контентом через WordPress и основы SEO-оптимизации дает агентству возможность самостоятельно поддерживать актуальность информации на сайте.',
-      'result__text-wp3': 'Этот проект демонстрирует мою способность создавать практичные и эффективные веб-решения, нацеленные на улучшение бизнес-процессов и укрепление цифрового присутствия компании.'
+      'result__text-wp3': 'Этот проект демонстрирует мою способность создавать практичные и эффективные веб-решения, нацеленные на улучшение бизнес-процессов и укрепление цифрового присутствия компании.',
+      'project-overview__title-ts': 'Разработка корпоративного сайта для "TS-PRIME',
+      'project-overview__subtitle-ts': 'Поставщик оборудования для металлообработки',
+      'result__text-ts1': 'Создание веб-сайта для "TS-PRIME" стало значимым шагом для компании в цифровой среде. Разработанный сайт является удобным инструментом для пользователей и соответствует текущим рыночным стандартам. Сайт обладает четкой структурой и адаптивным дизайном, что обеспечивает его комфортное использование на всех устройствах. Возможность самостоятельного управления контентом и базовая SEO-оптимизация позволяют TS-PRIME поддерживать актуальность сайта.',
+      'result__text-ts2': 'Этот проект демонстрирует мою способность разрабатывать практичные веб-решения, способствующие улучшению операционной эффективности компании и её позиций в интернете.',
+      'project__description-ts-01': 'Задачей было разработать современный веб-сайт для TS-Prime, который предоставит пользователям полную информацию об услугах компании. Клиент требовал уникальный дизайн, на основе предоставленных примеров. Сайт должен быть интуитивно понятен широкой целевой аудитории и сохранять современный внешний вид.',
+      'project__description-ts-02': 'Реализован уникальный дизайн в строгом стиле. Сайт обогащен множеством элементов, но без перегрузки информацией. Для улучшения восприятия введены динамические анимации на CSS и JavaScript. Был создан каталог оборудования и услуг, а также добавлено боковое меню для облегчения навигации по категориям. Дизайн выполнен в светлой теме с оранжевыми акцентами, отражающими корпоративный стиль компании.',
     }
   };
 
