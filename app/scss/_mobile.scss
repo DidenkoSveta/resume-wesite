@@ -636,6 +636,12 @@
    }
 }
 
+@media (min-width: 1440px){
+   .project-overview__title{
+      width: 70%;
+   }
+}
+
 @media (max-width: 1240px){
    .project-overview-wrapper{
       width: 40%;
