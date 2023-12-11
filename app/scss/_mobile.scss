@@ -773,11 +773,11 @@
    }
 }
 
-@media (max-width: 768px){
-   .project-overview-wrapper{
-      align-items: center;
-   }
-}
+// @media (max-width: 768px){
+//    .project-overview-wrapper{
+//       align-items: center;
+//    }
+// }
 
 @media (max-width: 490px){
    .project-overview__header{
@@ -796,8 +796,13 @@
 @media (max-width: 768px){
    .project-overview__subtitle{
       font-size: 16px;
-      text-align: center;
       width: 90%;
+   }
+}
+
+@media (max-width: 490px){
+   .project-overview__subtitle{
+      text-align: center;
    }
 }
 
