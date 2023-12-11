@@ -837,6 +837,7 @@
       justify-content: space-between;
    }
    &__wrapper{
+      margin-top: 20px;
       width: 100%;
       display: flex;
       justify-content: space-between;
@@ -889,5 +890,29 @@
       line-height: normal;
    }
 }
+
+.result{
+   display: flex;
+   gap: 30px;
+   &__display{
+      width: 50%;
+   }
+   &__description{
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+   }
+}
+
+
+
+
+
+
+
+
+
+
 
 @import "mobile";

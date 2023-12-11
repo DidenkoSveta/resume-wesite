@@ -768,14 +768,20 @@
 
 @media (max-width: 768px){
    .project-overview__header{
-      align-items: center;
       gap: 20px;
       width: 500px;
    }
 }
 
+@media (max-width: 768px){
+   .project-overview-wrapper{
+      align-items: center;
+   }
+}
+
 @media (max-width: 490px){
    .project-overview__header{
+      align-items: center;
       gap: 20px;
       width: 100%;
    }
@@ -790,6 +796,7 @@
 @media (max-width: 768px){
    .project-overview__subtitle{
       font-size: 16px;
+      text-align: center;
       width: 90%;
    }
 }
@@ -867,6 +874,7 @@
    .project__wrapper{
       flex-direction: column;
       gap: 40px;
+      margin-top: 80px;
    }
 }
 
@@ -885,5 +893,30 @@
 @media (max-width: 420px){
    .project__feature{
       width: 26%;
+   }
+}
+
+@media (max-width: 768px){
+   .result{
+      flex-direction: column-reverse;
+      align-items: center;
+   }
+}
+
+@media (max-width: 768px){
+   .result__display{
+      width: 80%;
+   }
+}
+
+@media (max-width: 390px){
+   .result__display{
+      width: 100%;
+   }
+}
+
+@media (max-width: 768px){
+   .result__description{
+      width: 100%;
    }
 }

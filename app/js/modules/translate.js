@@ -56,9 +56,9 @@ document.addEventListener('DOMContentLoaded', () => {
       'feature-text04': 'Responsive Layout',
       'feature-text05': 'WordPress Integration',
       'feature-text06': 'Hosting Setup',
-      '': '',
-      '': '',
-      '': '',
+      'result__text-donart1': 'As a result of our work on the "Don-Art" website, we have developed a functional tool that is user-friendly and meets the current market demands.',
+      'result__text-donart2': 'The design of the site harmoniously integrates with the "Don-Art" corporate style, and thanks to the responsive design, it looks equally good on all types of devices. The simplicity of content management through WordPress and basic SEO optimization will allow the company to independently maintain therelevance of information on the site.',
+      'result__text-donart3': 'This project demonstrates my ability to create practical and effective web solutions aimed at improving business processes and strengthening the company\'s position in the digital space.',
       '': '',
       '': '',
       '': '',
@@ -118,6 +118,9 @@ document.addEventListener('DOMContentLoaded', () => {
       'feature-text04': 'Адаптивная верстка',
       'feature-text05': 'Интеграция с WordPress',
       'feature-text06': 'Настройка хостинга',
+      'result__text-donart1': 'В результате работы над сайтом для "Дон-Арт" мы получили функциональный инструмент, который удобен для пользователей и отвечает текущим требованиям рынка.',
+      'result__text-donart2': 'Дизайн сайта гармонично сочетается с корпоративным стилем "Дон-Арт", и благодаря адаптивной верстке сайт одинаково хорошо выглядит на всех типах устройств. Простота управления контентом через систему WordPress и базовая SEO оптимизация дадут возможность компании самостоятельно поддерживать актуальность информации на сайте.',
+      'result__text-donart3': 'Этот проект демонстрирует мою способность к созданию практичных и эффективных веб-решений, направленных на улучшение бизнес-процессов и укрепление позиций компании в цифровом пространстве.',
     }
   };
 
