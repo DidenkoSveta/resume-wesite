@@ -179,7 +179,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   };
 
-  
+
   // Функция смены языка и обновления элементов на странице
   function changeLanguage(lang) {
     Object.keys(translations[lang]).forEach(key => {
@@ -213,4 +213,5 @@ document.addEventListener('DOMContentLoaded', () => {
       changeLanguage(button.dataset.language);
     });
   });
+  
 });

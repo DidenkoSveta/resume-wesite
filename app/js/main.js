@@ -1,3 +1,11 @@
+document.addEventListener("DOMContentLoaded", function() {
+  var newUrl = window.location.href.replace(/\.html/g, '');
+  window.history.replaceState(null, null, newUrl);
+});
+
+
+
+
 //Убираем пустую якорную ссылку
 window.onload = function() {
    // Проверяем, есть ли в адресе хэш и перемещаемся в начало страницы
@@ -30,20 +38,4 @@ window.onload = function() {
     });
   }
 });
-
-// // Изменение стилей активной кнопки
-// document.querySelectorAll('.language-switcher__button').forEach(button => {
-//   button.addEventListener('click', function() {
-//     // Сначала убираем класс активности со всех кнопок
-//     document.querySelectorAll('.language-switcher__button').forEach(btn => {
-//       btn.classList.remove('language-switcher__button--active');
-//     });
-    
-//     // Добавляем класс активности к кнопке, по которой был совершён клик
-//     this.classList.add('language-switcher__button--active');
-
-//     // Вызываем функцию смены языка
-//     changeLanguage(this.dataset.language);
-//   });
-// });
 
