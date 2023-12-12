@@ -496,6 +496,12 @@
    }
 }
 
+@media (max-width: 768px) {
+   .projects__container {
+      justify-content: space-evenly;
+   }
+}
+
 @media (min-width: 1040px) {
    .projects__item:hover {
       transform: translateY(-10px);
