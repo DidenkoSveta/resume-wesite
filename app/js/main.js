@@ -31,22 +31,19 @@ window.onload = function() {
   }
 });
 
-// Изменение стилей активной кнопки
-document.querySelectorAll('.language-switcher__button').forEach(button => {
-  button.addEventListener('click', function() {
-    // Сначала убираем класс активности со всех кнопок
-    document.querySelectorAll('.language-switcher__button').forEach(btn => {
-      btn.classList.remove('language-switcher__button--active');
-    });
+// // Изменение стилей активной кнопки
+// document.querySelectorAll('.language-switcher__button').forEach(button => {
+//   button.addEventListener('click', function() {
+//     // Сначала убираем класс активности со всех кнопок
+//     document.querySelectorAll('.language-switcher__button').forEach(btn => {
+//       btn.classList.remove('language-switcher__button--active');
+//     });
     
-    // Добавляем класс активности к кнопке, по которой был совершён клик
-    this.classList.add('language-switcher__button--active');
+//     // Добавляем класс активности к кнопке, по которой был совершён клик
+//     this.classList.add('language-switcher__button--active');
 
-    // Вызываем функцию смены языка
-    changeLanguage(this.dataset.language);
-  });
-});
+//     // Вызываем функцию смены языка
+//     changeLanguage(this.dataset.language);
+//   });
+// });
 
-function changeLanguage(lang) {
-  // Ваш код для смены языка
-}

@@ -3,13 +3,14 @@ document.addEventListener('DOMContentLoaded', () => {
   const translations = {
     en: {
       'header__logo': 'Didenko Svetlana',
-      'hello': 'Hello! <br>I\'m ',
-      'hero__title-name': 'Svetlana,<br>HTML-Coder',
-      'footer__nav-link__portfolio': 'Portfolio',
+      'hello': 'Hello! ',
+      'name': 'I\'m ',
+      'hero__title-name': 'Svetlana, HTML-Coder',
+      'footer__nav-link__portfolio': 'Project',
       'footer__nav-link__about': 'About me',
       'footer__nav-link__skills': 'Skills',
       'footer__nav-link__education': 'Education',
-      'nav__link-portfolio': 'Portfolio',
+      'nav__link-portfolio': 'Project',
       'nav__link-skills': 'Skills',
       'nav__link-about': 'About me',
       'nav__link-education': 'Education',
@@ -23,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
       'projects__btn': 'View more',
       'skills__title': 'Technical skills',
       'skills__item-bem': 'BEM methodology',
-      'skills__item-animations': 'CSS animations',
+      'skills__item-animations': 'CSS & JS animations',
       'skills__item-git': 'Version Control / Git',
       'skills__item-wp': 'Layouts onto WordPress',
       'skills__item-api': 'Service APIs',
@@ -86,25 +87,18 @@ document.addEventListener('DOMContentLoaded', () => {
       'project__description-smart-02': 'After analyzing competitors, a prototype was developed, evolving into a unique, minimalist design. Responsive layout ensured proper display across all devices, with special attention given to easy navigation and highlighting the company\'s key services.',
       'result__text-smart1': 'The development of the SmartCom website resulted in a multifunctional resource that combines convenience, informativeness, and modern design. Based on competitor analysis, a decision was made to focus on minimalism in design, highlighting the company\'s key advantages. Responsive design ensured the site displayed correctly on all devices, including mobile phones and tablets.',
       'result__text-smart2': 'The SmartCom website provides users with easy access to the company\'s service information, enhances the overall perception of the brand, and strengthens its market position. With a clear structure and easy navigation, the site has become a key tool for attracting new customers and maintaining long-term relationships with existing ones.',
-      'result__text-smart3': 'This project showcases the ability to develop attractive and functional web solutions that meet client needs and contribute to their business growth in the digital environment.',
-      'project-overview__title-traineat': '',
-      'project-overview__subtitle-traineat': '',
-      'project__description-traineat-01': '',
-      'project__description-traineat-02': '',
-      'result__text-traineat1': '',
-      'result__text-traineat1': '',
-      'result__text-traineat1': '',
-      '': '',
+      'result__text-smart3': 'This project showcases the ability to develop attractive and functional web solutions that meet client needs and contribute to their business growth in the digital environment.'
     },
     ru: {
       'header__logo': 'Диденко Светлана',
-      'hello': 'Привет! <br>Я ',
-      'hero__title-name': 'Светлана,<br>Верстальщик',
+      'hello': 'Привет! ',
+      'name': 'Я ',
+      'hero__title-name': 'Светлана, Верстальщик',
       'footer__nav-link__portfolio': 'Проекты',
       'footer__nav-link__about': 'Обо мне',
       'footer__nav-link__skills': 'Навыки',
       'footer__nav-link__education': 'Образование',
-      'nav__link-portfolio': 'Портфолио',
+      'nav__link-portfolio': 'Проекты',
       'nav__link-skills': 'Навыки',
       'nav__link-about': 'Обо мне',
       'nav__link-education': 'Образование',
@@ -118,7 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
       'projects__btn': 'Смотреть',
       'skills__title': 'Технические навыки',
       'skills__item-bem': 'Методология БЭМ',
-      'skills__item-animations': 'CSS-анимации',
+      'skills__item-animations': 'CSS и JS анимация',
       'skills__item-git': 'Системы контроля версий / Git',
       'skills__item-wp': 'Верстка для WordPress',
       'skills__item-api': 'Сервисные API',
@@ -181,59 +175,42 @@ document.addEventListener('DOMContentLoaded', () => {
       'project__description-smart-02': 'После анализа конкурентов был разработан прототип, который превратился в уникальный минималистский дизайн. Адаптивная верстка обеспечила корректное отображение на всех устройствах, особое внимание было уделено удобству навигации и выделению ключевых услуг компании.',
       'result__text-smart1': 'В результате работы над проектом веб-сайта SmartCom был создан многофункциональный ресурс, сочетающий в себе удобство, информативность и современный дизайн. Основываясь на анализе конкурентов, было принято решение об ориентации на минимализм в дизайне, подчеркивающем ключевые преимущества компании. Адаптивная верстка обеспечила корректное отображение сайта на всех типах устройств, включая мобильные и планшеты.',
       'result__text-smart2': 'Сайт SmartCom предоставляет пользователям простой доступ к информации о услугах компании, улучшает общее восприятие бренда и укрепляет его позиции на рынке. С помощью четкой структуры и легкой навигации сайт стал ключевым инструментом для привлечения новых клиентов и поддержания долгосрочных отношений с существующими.',
-      'result__text-smart3': 'Этот проект демонстрирует способность к разработке привлекательных и функциональных веб-решений, которые отвечают потребностям клиентов и способствуют росту их бизнеса в интернете',
+      'result__text-smart3': 'Этот проект демонстрирует способность к разработке привлекательных и функциональных веб-решений, которые отвечают потребностям клиентов и способствуют росту их бизнеса в интернете'
     }
   };
 
-  const typingElement = document.querySelector('.hero__title-name');
-  let textToType = translations['en']['hero__title-name'];
-  let typedText = '';
-  let charIndex = 0;
-
-  function typeCharacter() {
-    if (charIndex < textToType.length) {
-      if (textToType[charIndex] === '<' && textToType.substring(charIndex, charIndex + 4) === '<br>') {
-        typedText += '<br>';
-        charIndex += 4;
-      } else {
-        typedText += textToType[charIndex++];
-      }
-      typingElement.innerHTML = typedText;
-      setTimeout(typeCharacter, 60);
-    }
-  }
-
+  
+  // Функция смены языка и обновления элементов на странице
   function changeLanguage(lang) {
-    Object.keys(translations[lang]).forEach((key) => {
+    Object.keys(translations[lang]).forEach(key => {
       const elements = document.querySelectorAll('.' + key);
-      elements.forEach((element) => {
+      elements.forEach(element => {
         element.innerHTML = translations[lang][key];
       });
     });
 
-    textToType = translations[lang]['hero__title-name'];
-    typedText = '';
-    charIndex = 0;
-    typeCharacter();
-  }
+    // Сохраняем выбранный язык в localStorage
+    localStorage.setItem('selectedLanguage', lang);
 
-  document.querySelector('.lang-en').addEventListener('click', () => changeLanguage('en'));
-  document.querySelector('.lang-ru').addEventListener('click', () => changeLanguage('ru'));
-
-  // Анимация появления элементов
-  let observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("in-view");
-        observer.unobserve(entry.target);
+    // Обновляем активность кнопок языка
+    const languageButtons = document.querySelectorAll('.language-switcher__button');
+    languageButtons.forEach(button => {
+      if (button.dataset.language === lang) {
+        button.classList.add('language-switcher__button--active');
+      } else {
+        button.classList.remove('language-switcher__button--active');
       }
     });
-  }, { threshold: 0.1 });
+  }
 
-  const elementsToAnimate = document.querySelectorAll('.skills__item, .about-me, .education, .languages, .soft-skills, .projects__item');
-  elementsToAnimate.forEach(item => {
-    observer.observe(item);
+  // Устанавливаем язык при загрузке страницы на основе сохранённого выбора
+  const selectedLanguage = localStorage.getItem('selectedLanguage') || 'en';
+  changeLanguage(selectedLanguage);
+
+  // Обработчик клика на кнопки переключения языка
+  document.querySelectorAll('.language-switcher__button').forEach(button => {
+    button.addEventListener('click', () => {
+      changeLanguage(button.dataset.language);
+    });
   });
-
-  typeCharacter();
 });
