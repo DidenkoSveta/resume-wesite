@@ -1,3 +1,14 @@
+document.addEventListener("DOMContentLoaded", function() {
+  var newUrl = window.location.href
+      .replace(/\.html/g, '')
+      .replace(/index/g, '')
+      .replace(/dist\//g, '');
+  window.history.replaceState(null, null, newUrl);
+});
+
+
+
+
 //Убираем пустую якорную ссылку
 window.onload = function() {
    // Проверяем, есть ли в адресе хэш и перемещаемся в начало страницы
