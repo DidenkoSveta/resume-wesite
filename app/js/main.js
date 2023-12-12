@@ -1,5 +1,8 @@
 document.addEventListener("DOMContentLoaded", function() {
-  var newUrl = window.location.href.replace(/\.html/g, '');
+  var newUrl = window.location.href
+      .replace(/\.html/g, '')
+      .replace(/index/g, '')
+      .replace(/dist\//g, '');
   window.history.replaceState(null, null, newUrl);
 });
 
