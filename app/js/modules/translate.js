@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
       'skills__item-bem': 'Методология БЭМ',
       'skills__item-animations': 'CSS и JS анимация',
       'skills__item-git': 'Системы контроля версий / Git',
-      'skills__item-wp': 'Верстка для WordPress',
+      'skills__item-wp': 'Верстка + натяжка на WordPress',
       'skills__item-api': 'Сервисные API',
       'skills__item-optimization': 'Оптимизация и продвижение веб-сайтов',
       'skills__item-semantic': 'Семантическая, адаптивная, валидная, кроссбраузерная верстка',
