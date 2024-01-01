@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
       'hero__download-cv': 'Download CV',
       'projects__title': 'Latest Projects',
       'projects__name-corporate': 'Corporate web site',
+      'projects__name-landing': 'Landing page',
       'projects__name-buisines': 'Business card website',
       'projects__name-store': 'Itnernet store',
       'projects__btn': 'View more',
@@ -59,6 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
       'feature-text03': 'Concept & Design',
       'feature-text04': 'Responsive Layout',
       'feature-text05': 'WordPress Integration',
+      'feature-text15': 'Maintenance and Support',
       'feature-text06': 'Hosting Setup',
       'result__text-donart1': 'As a result of our work on the "Don-Art" website, we have developed a functional tool that is user-friendly and meets the current market demands.',
       'result__text-donart2': 'The design of the site harmoniously integrates with the "Don-Art" corporate style, and thanks to the responsive design, it looks equally good on all types of devices. The simplicity of content management through WordPress and basic SEO optimization will allow the company to independently maintain therelevance of information on the site.',
@@ -88,7 +90,14 @@ document.addEventListener('DOMContentLoaded', () => {
       'project__description-smart-02': 'After analyzing competitors, a prototype was developed, evolving into a unique, minimalist design. Responsive layout ensured proper display across all devices, with special attention given to easy navigation and highlighting the company\'s key services.',
       'result__text-smart1': 'The development of the SmartCom website resulted in a multifunctional resource that combines convenience, informativeness, and modern design. Based on competitor analysis, a decision was made to focus on minimalism in design, highlighting the company\'s key advantages. Responsive design ensured the site displayed correctly on all devices, including mobile phones and tablets.',
       'result__text-smart2': 'The SmartCom website provides users with easy access to the company\'s service information, enhances the overall perception of the brand, and strengthens its market position. With a clear structure and easy navigation, the site has become a key tool for attracting new customers and maintaining long-term relationships with existing ones.',
-      'result__text-smart3': 'This project showcases the ability to develop attractive and functional web solutions that meet client needs and contribute to their business growth in the digital environment.'
+      'result__text-smart3': 'This project showcases the ability to develop attractive and functional web solutions that meet client needs and contribute to their business growth in the digital environment.',
+      'project-overview__title-platon': 'Developing a landing page for Plato\'s Honey',
+      'project-overview__subtitle-platon': 'Personal apiary',
+      'project__description-platon-01': 'The task involves creating a modern and informative online resource to acquaint users with the company\'s services. The client demands a unique and stylish design, providing examples for inspiration. The website must have an intuitive interface, accessible to a broad range of users, while maintaining a contemporary and attractive appearance.',
+      'project__description-platon-02': 'It has been decided to create a unique design with an emphasis on honey shades, ensuring an attractive appearance that is not overloaded with information. The site will feature dynamic elements implemented using CSS and JS, adding liveliness and interactivity. Additionally, an easy and intuitive structure is planned to ensure convenient navigation for users.',
+      'result__text-platon1': 'The "Honey Platon" website serves as a virtual embodiment of the brand\'s philosophy, where each element reflects a commitment to natural beekeeping. Visitors are offered not just a look at the products but an immersion into the world of beekeeping through a meticulously crafted visual concept.',
+      'result__text-platon2': 'Interactive features such as animated transitions and visualizations of the honey production process make the site vibrant and engaging.',
+      'result__text-platon3': 'User convenience is ensured with a well-thought-out structure and easy navigation, allowing for effortless access to information and product selection.',
     },
     ru: {
       'header__logo': 'Диденко Светлана',
@@ -108,6 +117,7 @@ document.addEventListener('DOMContentLoaded', () => {
       'hero__download-cv': 'Скачать резюме',
       'projects__title': 'Последние проекты',
       'projects__name-corporate': 'Корпоративный веб-сайт',
+      'projects__name-landing': 'Посадочная страница',
       'projects__name-buisines': 'Сайт-визитка',
       'projects__name-store': 'Интернет магазин',
       'projects__btn': 'Смотреть',
@@ -148,6 +158,7 @@ document.addEventListener('DOMContentLoaded', () => {
       'feature-text03': 'Концепция и дизайн',
       'feature-text04': 'Адаптивная верстка',
       'feature-text05': 'Интеграция с WordPress',
+      'feature-text15': 'Обслуживание и поддержка',
       'feature-text06': 'Установка на хостинг',
       'result__text-donart1': 'В результате работы над сайтом для "Дон-Арт" мы получили функциональный инструмент, который удобен для пользователей и отвечает текущим требованиям рынка.',
       'result__text-donart2': 'Дизайн сайта гармонично сочетается с корпоративным стилем "Дон-Арт", и благодаря адаптивной верстке сайт одинаково хорошо выглядит на всех типах устройств. Простота управления контентом через систему WordPress и базовая SEO оптимизация дадут возможность компании самостоятельно поддерживать актуальность информации на сайте.',
@@ -177,7 +188,14 @@ document.addEventListener('DOMContentLoaded', () => {
       'project__description-smart-02': 'После анализа конкурентов был разработан прототип, который превратился в уникальный минималистский дизайн. Адаптивная верстка обеспечила корректное отображение на всех устройствах, особое внимание было уделено удобству навигации и выделению ключевых услуг компании.',
       'result__text-smart1': 'В результате работы над проектом веб-сайта SmartCom был создан многофункциональный ресурс, сочетающий в себе удобство, информативность и современный дизайн. Основываясь на анализе конкурентов, было принято решение об ориентации на минимализм в дизайне, подчеркивающем ключевые преимущества компании. Адаптивная верстка обеспечила корректное отображение сайта на всех типах устройств, включая мобильные и планшеты.',
       'result__text-smart2': 'Сайт SmartCom предоставляет пользователям простой доступ к информации о услугах компании, улучшает общее восприятие бренда и укрепляет его позиции на рынке. С помощью четкой структуры и легкой навигации сайт стал ключевым инструментом для привлечения новых клиентов и поддержания долгосрочных отношений с существующими.',
-      'result__text-smart3': 'Этот проект демонстрирует способность к разработке привлекательных и функциональных веб-решений, которые отвечают потребностям клиентов и способствуют росту их бизнеса в интернете'
+      'result__text-smart3': 'Этот проект демонстрирует способность к разработке привлекательных и функциональных веб-решений, которые отвечают потребностям клиентов и способствуют росту их бизнеса в интернете',
+      'project-overview__title-platon': 'Разработка лендинга для "Мёд Платона',
+      'project-overview__subtitle-platon': 'Личная пасека',
+      'project__description-platon-01': 'Задача включает создание современного и информативного интернет-ресурса для знакомства пользователей с услугами компании. Клиент требует уникальный и стильный дизайн, предоставив примеры для вдохновения. Веб-сайт должен иметь интуитивный интерфейс, быть доступным для широкого круга пользователей и сохранять современный привлекательный вид.',
+      'project__description-platon-02': 'Решено создать уникальный дизайн с акцентом на медовые оттенки, чтобы сайт был привлекательным и не перегруженным информацией. Сайт будет включать динамические элементы на CSS и JS, придавая ему живость и интерактивность. Планируется легкая и интуитивная структура для удобства навигации пользователей.',
+      'result__text-platon1': 'Сайт "Мёд Платона" служит виртуальным отображением философии бренда, каждый элемент отражает приверженность к натуральному пчеловодству. Посетители могут погрузиться в мир пчеловодства через тщательно разработанную визуальную концепцию.',
+      'result__text-platon2': 'Интерактивные особенности, такие как анимированные переходы и визуализации процесса производства меда, оживляют сайт и делают его захватывающим.',
+      'result__text-platon3': 'Удобство пользователей обеспечено благодаря хорошо продуманной структуре и простой навигации, позволяющей легко доступ к информации и выбор продукции.'
     }
   };
 
